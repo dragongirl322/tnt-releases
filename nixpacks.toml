@@ -1,0 +1,8 @@
+# Fallback if the Railway service is switched from Dockerfile to Nixpacks.
+# The app needs Node 22.13+ for the built-in SQLite driver.
+
+[variables]
+NIXPACKS_NODE_VERSION = "22"
+
+[start]
+cmd = "npm start"

@@ -1,0 +1,22 @@
+{
+  "name": "tnt-releases",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Phone-first release board for TNT Music Edmonds.",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0 --port ${PORT:-3000}",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "next": "^15.5.4",
+    "pg": "^8.16.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}
